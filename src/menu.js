@@ -32,15 +32,22 @@ var shipRotate = 0;
 var fadeId = 0;
 var time = 0.0;
 
-shipImage.src = "Images/ship.png";
-backgroundImage.src = "Images/Background.png";
-titleImage.src = "Images/title.png";
-playImage.src = "Images/play.png";
+shipImage.src =
+  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/0xoq-ship.png";
+backgroundImage.src =
+  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/G0g_-Background.png";
+titleImage.src =
+  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/FqZj-logo.png";
+playImage.src =
+  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/I8jN-play.png";
 // singleplayerImage.src = "Images/Singleplayer.png";
 // multiplayerImage.src = "Images/Multiplayer.png";
-instructionsImage.src = "Images/instructions.png";
-settingsImage.src = "Images/settings.png";
-creditsImage.src = "Images/credits.png";
+instructionsImage.src =
+  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/Uyau-instructions.png";
+settingsImage.src =
+  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/qrXl-settings.png";
+creditsImage.src =
+  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/wbPn-credits.png";
 
 var buttonX = [192, 110, 149, 160];
 var buttonY = [100, 140, 180, 220];
@@ -148,5 +155,3 @@ timerId = setInterval(function() {
 }, 1000 / frames);
 canvas.addEventListener("mousemove", checkPos);
 canvas.addEventListener("mouseup", checkClick);
-timerId = null;
-console.log(timerId);
