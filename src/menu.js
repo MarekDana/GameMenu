@@ -146,6 +146,7 @@ function checkClick(mouseEvent) {
       if (mouseY > buttonY[i] && mouseY < buttonY[i] + buttonHeight[i]) {
         // kliknuti na jedno tlacitek, melo by poznat na ktere, zastavit aktualni vykreslovani a vykreslit dalsi akci (propojit s dalsím .js souborem)
         fadeId = setInterval(fadeOut(), 100 / frames);
+        context = null;
       }
     }
   }
