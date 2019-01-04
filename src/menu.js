@@ -49,10 +49,10 @@ settingsImage.src =
 creditsImage.src =
   "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/wbPn-credits.png";
 
-var buttonX = [192, 110, 149, 160];
-var buttonY = [100, 140, 180, 220];
+var buttonX = [420, 420, 420, 420];
+var buttonY = [240, 280, 320, 360];
 var buttonWidth = [96, 260, 182, 160];
-var buttonHeight = [40, 40, 40, 40];
+var buttonHeight = [80, 80, 80, 80];
 
 // vykresli vsechny obrazky
 function draw() {
@@ -145,8 +145,7 @@ function checkClick(mouseEvent) {
     if (mouseX > buttonX[i] && mouseX < buttonX[i] + buttonWidth[i]) {
       if (mouseY > buttonY[i] && mouseY < buttonY[i] + buttonHeight[i]) {
         // kliknuti na jedno tlacitek, melo by poznat na ktere, zastavit aktualni vykreslovani a vykreslit dalsi akci (propojit s dalsím .js souborem)
-        fadeId = setInterval(fadeOut(), 100 / frames);
-        context = null;
+        context.fillRect(150, 150, 150, 150);
       }
     }
   }
