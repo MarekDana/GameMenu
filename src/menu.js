@@ -35,7 +35,7 @@ var time = 0.0;
 shipImage.src =
   "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/0xoq-ship.png";
 backgroundImage.src =
-  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/G0g_-Background.png";
+  "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/EBNN-BackgroundChange.png";
 titleImage.src =
   "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/FqZj-logo.png";
 playImage.src =
@@ -49,15 +49,15 @@ settingsImage.src =
 creditsImage.src =
   "https://uploads.codesandbox.io/uploads/user/8c15a0b4-85ee-4b26-809a-df9cf9fad315/wbPn-credits.png";
 
-var buttonX = [420, 420, 420, 420];
-var buttonY = [240, 280, 320, 360];
+var buttonX = [240, 240, 240, 240];
+var buttonY = [120, 160, 200, 240];
 var buttonWidth = [96, 260, 182, 160];
 var buttonHeight = [80, 80, 80, 80];
 
 // vykresli vsechny obrazky
 function draw() {
   context.drawImage(backgroundImage, 0, backgroundY);
-  context.drawImage(titleImage, 50, -10);
+  context.drawImage(titleImage, 160, 0);
   context.drawImage(playImage, buttonX[0], buttonY[0]);
   context.drawImage(instructionsImage, buttonX[1], buttonY[1]);
   context.drawImage(settingsImage, buttonX[2], buttonY[2]);
